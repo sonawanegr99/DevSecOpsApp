@@ -6,7 +6,7 @@ pipeline{
       steps{
         sh '''
         #!/bin/bash
-        sudo docker run --rm -i hadolint/hadolint < ./Dockerfile
+        sudo docker run --rm -i hadolint/hadolint < ./home/ec2-user/DevSecOpsApp/DevSecOpsApp/Dockerfile
         '''
       }
       }
