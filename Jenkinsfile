@@ -4,9 +4,11 @@ pipeline{
   stages{
     stage('test'){
       steps{
-        sh '#!/bin/bash '
-        sh 'cd /home/ec2-user/DevSecOpsApp/DevSecOpsApp'
-        sh 'sudo docker run --rm -i hadolint/hadolint < ./Dockerfile'
+        bash '''
+        #!/bin/bash
+        cd /home/ec2-user/DevSecOpsApp/DevSecOpsApp
+        sudo docker run --rm -i hadolint/hadolint < ./Dockerfile
+        '''
       }
       }
      }
