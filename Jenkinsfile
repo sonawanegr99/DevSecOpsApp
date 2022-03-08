@@ -4,10 +4,8 @@ pipeline{
   stages{
     stage('test'){
       steps{
-      echo "hello world"
-      sh 'mkdir newfolder'
-      sh 'pwd'
-      sh 'ls -la'
+        
+        sh 'sudo docker run --rm -i hadolint/hadolint < /home/ec2-user/DevSecOpsApp/DevSecOpsApp/Dockerfile'
       }
       }
      }
