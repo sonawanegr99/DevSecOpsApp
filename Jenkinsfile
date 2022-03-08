@@ -5,6 +5,8 @@ pipeline{
     stage('test'){
       steps{
         sh 'pwd'
+        sh 'cd ~'
+        sh 'pwd'
       }
       }
      }
