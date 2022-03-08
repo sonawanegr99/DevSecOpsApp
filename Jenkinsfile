@@ -4,7 +4,7 @@ pipeline{
   stages{
     stage('test'){
       steps{
-      echo "hello world newhere agian 3345 huioo";
+      echo "hello world newhere agian 3345 huiocsscsao";
       }
       }
      }
