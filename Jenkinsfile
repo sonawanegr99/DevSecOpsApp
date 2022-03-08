@@ -4,9 +4,9 @@ pipeline{
   stages{
     stage('test'){
       steps{
-        sh 'pwd'
-        sh 'cd ~'
-        sh 'pwd'
+        sh '''#!/bin/bash
+                 echo "hello world" 
+         '''
       }
       }
      }
