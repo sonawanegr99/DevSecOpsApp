@@ -4,7 +4,10 @@ pipeline{
   stages{
     stage('test'){
       steps{
-      echo "hello world newhere agian 3345 huiocsscsao";
+      echo "hello world"
+      sh mkdir newfolder
+      sh pwd
+      sh ls -la
       }
       }
      }
