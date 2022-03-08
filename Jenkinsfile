@@ -5,7 +5,10 @@ pipeline{
     stage('test'){
       steps{
         sh '''#!/bin/bash
-                 echo "hello world" 
+                  pwd
+                  cd ~
+                  cd ./home/ec2-user/DevSecOpsApp/DevSecOpsApp
+                  pwd
          '''
       }
       }
