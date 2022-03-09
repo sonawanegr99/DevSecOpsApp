@@ -4,7 +4,7 @@ pipeline{
     stage('test'){
       steps{
       
-      sh '/home/ec2-user/DevSecOpsApp/DevSecOpsApp/shellscript.sh'
+      sh '/var/lib/jenkins/workspace/DevSecOps/shellscript.sh'
       }
       }
      }
