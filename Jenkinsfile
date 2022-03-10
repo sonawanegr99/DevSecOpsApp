@@ -5,6 +5,7 @@ pipeline{
       steps{
       
       sh '/var/lib/jenkins/workspace/DevSecOps/shellscript.sh'
+      
       }
       }
      }
